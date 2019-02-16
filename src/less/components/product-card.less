@@ -1,0 +1,136 @@
+.cards-list__item {
+	.col-12;
+	margin: auto;
+
+	&:not(:first-child) {
+        margin-top: 10px;
+
+		@media (min-width: 750px) {
+            margin-top: 0;
+        }
+	}
+
+	&:not(:first-child), 
+	&:not(:nth-child(2)) {
+
+		@media (min-width: 750px) {
+            margin-top: 10px;
+        }
+	}
+
+	@media (min-width: 750px) {
+        .col-6;
+    }
+
+    @media (min-width: 1024px) {
+        .col-4;
+    }
+
+	@media (min-width: 1170px) {
+        .col-3;
+    }
+
+	&__figure {
+		position: relative;
+		margin: 0;
+		text-align: center;
+		overflow: hidden;
+		padding: 5px;
+        border-radius: 5px;
+        background-color: #353535;
+	}
+
+	&__figcaption {
+		.row;
+		.justify-center;
+		.align-center;
+		padding: 5px;
+		min-height: 50px;
+	    text-align: center;
+	    border: 1px solid #404040;
+	    background-color: #110f10;
+	    font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+	    font-style: normal;
+	    font-size: @card__figcaption--mobile;
+	    color: #fff;
+
+	    @media (min-width: 1170px) {
+            font-size: @card__figcaption--desktop;
+        }
+	}
+}
+
+.small-img {
+	display: none;
+}
+
+.filter-block {
+	margin-bottom: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: @catalog-filter--mobile;
+	font-weight: 900;
+	
+	@media (min-width: 750px){
+		text-transform: uppercase;
+	}
+
+	@media (min-width: 1170px){
+		font-size: @catalog-filter--desktop;		
+	}	
+}
+
+.filter-block__block {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	list-style-type: none;
+}
+
+.filter-block__element {
+	padding: 0;
+	display: block;
+	
+	@media (min-width: 750px){
+		margin-right: 0px;
+		display: inline-block;
+	}
+
+	@media (min-width: 1170px){
+		margin-right: 15px;
+		
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.filter-block__button {
+	display: inline-block;
+	padding: 8px 8px 10px;
+	color: #cecece;
+	cursor: pointer;
+
+	@media (min-width: 750px){
+		padding: 12px 31px 15px;
+	}
+	
+	&:hover {
+		color: #696969;
+	}
+}
+
+.filter-block__button--active {
+	padding: 10px 29px 13px;
+	color: #a9a9a9;
+	border: 1px solid #cecece;
+}
+
+#cards {
+	text-align: center;
+}
+
+#cards .mix {
+	display: none;
+	text-align: left;
+}

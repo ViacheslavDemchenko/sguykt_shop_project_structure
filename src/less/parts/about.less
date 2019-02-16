@@ -1,0 +1,132 @@
+.about {
+	position: relative;
+	padding: 25px 0;
+	min-height: 600px;
+	overflow: hidden;
+	background-image: url(../img/bg/about-bg.jpg);
+	.bg-img;
+	background-attachment: fixed;
+
+	@media (min-width: 1170px) {
+        padding: 50px 0;
+	    min-height: 800px;
+    }
+
+	&::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.5);
+	}
+
+
+	&-content {
+		position: relative;
+		z-index: 2;
+		margin-bottom: 25px;
+		padding: 10px;
+		text-align: center;
+
+		@media (min-width: 1170px) {
+            margin-bottom: 50px;
+        }
+
+		&__title,
+		&__text {
+            .m-0;
+		}
+
+		&__title {
+			margin-bottom: 30px;
+			font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+	        font-style: normal;
+	        font-size: @about-content__title--mobile;
+	        color: #fff;
+
+			@media (min-width: 1170px) {
+                font-size: @about-content__title--desktop;
+            }
+		}
+
+		&__text {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: @about-content__text;
+            color: #fff;
+
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	&-inner-wrap {
+		.row;
+		.justify-between;
+
+		.image-block {
+            .col-12;
+            text-align: center;
+            overflow: hidden;
+
+            @media (min-width: 1170px) {
+                .col-5;
+                height: 315px;
+            }
+
+            .image {
+                border-radius: 5px;
+            }
+		}
+
+		.text-block {
+            .col-12;
+            margin-top: 40px;
+            padding-left: 40px;
+
+            @media (min-width: 1170px) {
+                .col-6;
+                margin-top: 0;
+                padding-left: 0;
+            }
+
+            &__title {
+            	.m-0;
+            	margin-bottom: 20px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 900;
+                font-style: normal;
+                font-size: @text-block__title;
+                color: #fff;
+            }
+
+            &-list {
+            	.p-0--m-0;
+            	list-style-image: url(../img/icons/list-marker-icon.svg); 
+            }
+
+            &__item {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: @text-block__item;
+                color: #fff;
+
+            	&:not(:last-child) {
+            		margin-bottom: 15px;
+
+            		@media (min-width: 1170px) {
+                        margin-bottom: 8px;
+                    }
+            	}
+            }
+		}
+	}
+}

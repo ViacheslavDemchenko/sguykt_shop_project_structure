@@ -1,0 +1,79 @@
+.popular {
+	position: relative;
+	padding: 25px 0 25px 0;
+	min-height: 500px;
+	background-image: url(../img/bg/popular-bg.jpg);
+	.bg-img;
+	background-attachment: fixed;
+
+	@media (min-width: 375px) {
+        min-height: 550px;
+    }
+
+	@media (min-width: 425px) {
+        min-height: 600px;
+    }
+
+    @media (min-width: 500px) {
+        min-height: 450px;
+    }
+
+    @media (min-width: 1024px) {
+        min-height: 550px;
+    }
+
+    @media (min-width: 1170px) {
+        padding: 50px 0 50px 0;
+        min-height: 650px;
+    }
+
+	@media (min-width: 1170px) {
+        padding: 50px 0 50px 0;
+        min-height: 700px;
+    }
+
+	&::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.5);
+	}
+}
+
+.slick {
+	position: relative;
+}
+
+.slide {
+	position: relative;
+    margin: 0 5px;
+    border: 1px solid #696969;
+    border-radius: 5px;
+	background-color: #353535;
+	cursor: auto;
+}
+
+.slide__picture {
+
+	.slide__image {
+		margin: auto;
+		padding: 10px 10px 0 10px;
+	}
+}
+
+.slide__figure {
+	.m-0;
+}
+
+.slide__figcaption {
+	padding: 10px 5px 5px 5px;
+	text-align: center;
+	border: 1px solid #404040;
+	background-color: #110f10;
+}
+	
