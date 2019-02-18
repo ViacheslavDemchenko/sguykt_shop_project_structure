@@ -19,5 +19,26 @@
     	.justify-between;
     	.p-0--m-0;
     	list-style: none;
+
+        &__button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #f59d39;
+            border-radius: 20px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: @catalog-card__link;
+            color: #fff;
+            text-transform: uppercase;
+            transition: all .3s ease-out;
+
+            &:hover {
+                border: #f59d39;
+                background-color: #F5DEB3;
+                color: #D2691E;
+            }
+        }
     }
 }
